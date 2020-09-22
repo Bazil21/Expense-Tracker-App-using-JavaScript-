@@ -19,7 +19,9 @@ function expense(){
           closing_balance = total_amount + parseInt(input);
         cbalance.innerHTML = closing_balance + " .00 $" ;
         income.innerHTML = closing_balance + " .00 $";
-        document.getElementById("input").value.reset();
+        document.getElementById("input").value;
+        document.createElement("h2");
+
     }
 
 
@@ -34,5 +36,5 @@ function expense(){
      document.getElementById("cbalance").innerHTML = total_amount + " .00 $"
     }
 
-    
+    parseInt(input) = "0";
 }
