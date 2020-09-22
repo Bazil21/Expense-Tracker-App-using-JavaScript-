@@ -6,6 +6,13 @@ function expense(){
     var income = document.getElementById("income");
     var expense = document.getElementById("expense");
     var input = document.getElementById("input").value;
+    var description = document.getElementById("descrip").value;
+    var transaction_record = document.getElementById("transaction_record")
+    var record = document.createElement("div");
+    record.setAttribute("id","history");
+    var history = document.createTextNode(description  + "  ---------  " + input + "   $   ");
+    record.appendChild(history);
+    transaction_record.appendChild(record);
 
 
     if(input == "")
