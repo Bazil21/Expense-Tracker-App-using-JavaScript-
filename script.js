@@ -1,12 +1,15 @@
 AOS.init();
 
 
+
+
 function expense(){
     var cbalance = document.getElementById("cbalance");
     var income = document.getElementById("income");
     var expense = document.getElementById("expense");
     var input = document.getElementById("input").value;
     var description = document.getElementById("descrip").value;
+
     var transaction_record = document.getElementById("transaction_record")
     var record = document.createElement("div");
     record.setAttribute("id","history");
@@ -14,10 +17,13 @@ function expense(){
     record.appendChild(history);
     transaction_record.appendChild(record);
 
+    record.addEventListener('click',function(){this.remove(history);})
 
-    if(input == "")
+
+    if(input == "" )
     {
         alert("Please ! Enter Your Salaray or Expense.");
+        record.remove(record);
     }
 
 
@@ -43,5 +49,12 @@ function expense(){
      document.getElementById("cbalance").innerHTML = total_amount + " .00 $"
     }
 
-    parseInt(input) = "0";
+    document.getElementById("input").value = '';
+    document.getElementById("descrip").value = '';
+
+    window.scroll({
+        top: 1000,
+        left: 0,
+        behavior: 'smooth'
+      });
 }

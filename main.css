@@ -1,5 +1,8 @@
 body{
     font-family: 'Poppins', sans-serif;
+    background-image: url('./Images/wal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #box {
@@ -10,7 +13,7 @@ body{
 .container1{
     width: 80%;
     margin: auto;
-    background-color: rgba(255, 0, 0, 0.4);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0));
     margin-top: 2rem;
     border: black 2px solid;
     border-radius: .5rem;
@@ -67,19 +70,25 @@ input[type="text"]{
     border: none;
     border-bottom: 2px solid rgb(255, 81, 81);
     margin-bottom: 10px;
+    font-size: 17px;
 }
 input[type="number"]{
-    background-color: rgb(128,0,0,0.6);
-    border: 0;
+    background-color: rgb(128,0,0,0.5);
+    border: none;
 }
 input[type="number"]:focus{
-    background-color: rgba(136, 53, 53, 0.7);
+    background-color: rgba(136, 53, 53, 0.4);
     color: white;
-    box-shadow: 0;
-    outline: 0;
+    box-shadow: none;
+    outline: none;
+
 }
 .form{
     margin-top: 80px;
+}
+::placeholder{
+    font-size: 18px;
+    color: black;
 }
 .sideicon{
     background-color: rgb(0,0,0,0.7);
@@ -124,10 +133,11 @@ input[type="number"]:focus{
     outline: none;
 }
 #transaction_record{
-    width: 50%;
+    width: 53%;
     margin: auto;
     margin-top: 10px;
     text-align: center;
+    letter-spacing: 2px;
    
 }
 .tran_his{
@@ -144,4 +154,11 @@ input[type="number"]:focus{
     font-size: 25px;
     border-radius: 5px;
     padding: 5px;
+}
+#remover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(62, 65, 216, 0.836);
+    padding: 10px;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
 }
