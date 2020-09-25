@@ -1,8 +1,5 @@
 body{
     font-family: 'Poppins', sans-serif;
-    background-image: url('./Images/wal.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #box {
@@ -13,10 +10,11 @@ body{
 .container1{
     width: 80%;
     margin: auto;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0));
+    border-radius: 86px;
+    background: linear-gradient(145deg, #d84bdb, #ff59ff);
+    box-shadow:  5px 5px 9px #b43eb6, 
+             -5px -5px 9px #ff68ff;
     margin-top: 2rem;
-    border: black 2px solid;
-    border-radius: .5rem;
 }
 #header{
     color: rgba(1, 2, 0, 0.842);
@@ -118,6 +116,7 @@ input[type="number"]:focus{
     border-radius: 6px;
     transition: all 0.3s ease 0s;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .button:hover{
@@ -145,20 +144,20 @@ input[type="number"]:focus{
     font-size: 30px;
     border-radius: 5px;
     padding: 10px;
+    text-transform: uppercase;
 }
 #history{
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: tomato;
+    border-radius: 86px;
+background: linear-gradient(145deg, #d84bdb, #ff59ff);
+box-shadow:  5px 5px 9px #b43eb6, 
+             -5px -5px 9px #ff68ff;
     font-size: 25px;
-    border-radius: 5px;
     padding: 5px;
 }
 #remover{
     color: rgb(0, 0, 0);
-    background-color: rgba(62, 65, 216, 0.836);
-    padding: 10px;
-    border-radius: 50px;
     font-family: 'Poppins', sans-serif;
 }
