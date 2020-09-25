@@ -150,10 +150,10 @@ input[type="number"]:focus{
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-radius: 86px;
-background: linear-gradient(145deg, #d84bdb, #ff59ff);
-box-shadow:  5px 5px 9px #b43eb6, 
-             -5px -5px 9px #ff68ff;
+    border-radius: 79px;
+    background: #8b841d;
+    box-shadow:  50px 50px 92px #948e33, 
+                 -50px -50px 92px #fcfc0b;
     font-size: 25px;
     padding: 5px;
 }
